@@ -46,6 +46,6 @@ public class Test1 {
 		System.out.println("Digits: "+digits);
 		System.out.println("spaces :"+ spaces);
 		
-		System.out.println("new change for checking the file into the git 2");
+		System.out.println("new change for checking the file is modified by checking the changes side by side");
 	}		
 }
