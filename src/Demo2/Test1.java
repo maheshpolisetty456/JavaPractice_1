@@ -45,5 +45,7 @@ public class Test1 {
 		System.out.println("special character :"+special);
 		System.out.println("Digits: "+digits);
 		System.out.println("spaces :"+ spaces);
+		
+		System.out.println("new change for checking the file into the git 2");
 	}		
 }
