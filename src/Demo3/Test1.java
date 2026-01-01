@@ -9,6 +9,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -153,11 +154,28 @@ public class Test1 {
 		
 		//Convert List to Map
 		
-		List<String> list = Arrays.asList("apple","banana","mango");
+//		List<String> list = Arrays.asList("apple","banana","mango");
+//		
+//		Map<String , Integer> map = list.stream().collect(Collectors.toMap(c->c, String::length));
+//		
+//		System.out.println(map);
 		
-		Map<String , Integer> map = list.stream().collect(Collectors.toMap(c->c, String::length));
+		// print the list of leap leap year
 		
-		System.out.println(map);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Year start: ");
+		int start = sc.nextInt();
+		
+		System.out.println("Enter the Year end");
+		
+		int end  = sc.nextInt();
+		for(int year = start; year<=end; year++) {
+		
+		if(year % 4 ==0 && year % 100 !=0 ||(year % 400 ==0)) {
+			System.out.print(year+",");
+		}
+		}
+				
 		
 		
 	}
