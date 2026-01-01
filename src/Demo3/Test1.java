@@ -119,8 +119,8 @@ public class Test1 {
 		
 		//Compare two list (Missing, Extra, common)
 		
-		List<String> list1 = Arrays.asList("apple","banana","mango");
-		List<String> list2 = Arrays.asList("banana","graps");
+//		List<String> list1 = Arrays.asList("apple","banana","mango");
+//		List<String> list2 = Arrays.asList("banana","graps");
 		
 //		Set<String> set1 = new  HashSet<String>(list1);
 //		Set<String> set2 = new  HashSet<String>(list2);
@@ -151,7 +151,13 @@ public class Test1 {
 //		List<String> extra = list2.stream().filter(c->!list1.contains(c)).toList();
 //		System.out.println("Extra: "+extra);
 		
+		//Convert List to Map
 		
+		List<String> list = Arrays.asList("apple","banana","mango");
+		
+		Map<String , Integer> map = list.stream().collect(Collectors.toMap(c->c, String::length));
+		
+		System.out.println(map);
 		
 		
 	}
