@@ -143,14 +143,13 @@ public class Test1 {
 		
 		//revere  the each word in a sentence
 		
-		String str = "Java is a good programing language !@#$%^&* 12345678";
+//		String str = "Java is a good programing language !@#$%^&* 12345678";
+//		
+//		String result =Arrays.stream(str.split(" ")).map(f->new StringBuffer(f).reverse().toString()).collect(Collectors.joining(" "));
+//		System.out.println(result);
+//		
 		
-		String result =Arrays.stream(str.split(" ")).map(f->new StringBuffer(f).reverse().toString()).collect(Collectors.joining(" "));
-		System.out.println(result);
 		
-		
-		
-		/.args..........args......
 	}
 
 }
